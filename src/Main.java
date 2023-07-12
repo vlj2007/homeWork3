@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1(){
@@ -39,8 +40,21 @@ public class Main {
         System.out.println(e);
         System.out.println(f);
         System.out.println(g);
+    }
 
 
+    public static void task3(){
+        System.out.println("Задача 3");
+        int teacherLP = 23;
+        int teacherAS = 27;
+        int teacherEA = 30;
+        int allPaper = 480;
+        int pupils = teacherLP + teacherAS + teacherEA;
+        int sheetsForEachPupils = allPaper / pupils;
+        System.out.println("У Людмилы Павловны — " + teacherLP + " ученика ");
+        System.out.println("У Анны Сергеевны — " + teacherAS + " ученика ");
+        System.out.println("У Екатерины Андреевны — " + teacherEA + " ученика ");
+        System.out.println("На каждого ученика рассчитано " + sheetsForEachPupils + " листов бумаги");
 
     }
 
