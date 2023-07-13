@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1(){
@@ -122,6 +123,24 @@ public class Main {
         int resultBlender = resultBananas + resultMilk + resultIceCream + resultRawEggs;
         double result = resultBlender * 0.001;
         System.out.println("Результат: " + resultBlender + " грамм - " + result + " кг");
+
+    }
+
+    public static void task7(){
+        System.out.println("Задача 7");
+        int overWeightKilo = 7;
+        int overWeightGram = overWeightKilo * 1000;
+        int loseWeightMinimumGram = 250;
+        int loseWeightMaximumGram = 500;
+        int minimumDays = overWeightGram / loseWeightMinimumGram;
+        int maximumDays = overWeightGram / loseWeightMaximumGram;
+        int loseWeightMediumGram = (loseWeightMinimumGram + loseWeightMaximumGram ) / 2;
+        int mediumDays = overWeightGram / loseWeightMediumGram;
+        System.out.println("На похудение уйдет " + minimumDays + " дней , если спортсмен будет терять каждый день по " + loseWeightMinimumGram + " грамм." );
+        System.out.println("На похудение уйдет " + mediumDays + " дней , если спортсмен будет терять каждый день по " + loseWeightMediumGram + " грамм." );
+        System.out.println("На похудение уйдет " + maximumDays + " дней , если спортсмен будет терять каждый день по " + loseWeightMaximumGram + " грамм." );
+
+
 
     }
 
