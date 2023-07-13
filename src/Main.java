@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1(){
@@ -102,6 +103,26 @@ public class Main {
         int allWhiteCans = totalClasses * whiteCans;
         int allBrownCans = totalClasses * brownCans;
         System.out.println("В школе, где " + totalClasses + " классов, нужно " + allWhiteCans + " банок белой краски и " + allBrownCans + " банок коричневой краски.");
+    }
+
+    public static void task6(){
+        System.out.println("Задача 6");
+        byte bananasWidget = 5;
+        byte bananasGrams = 80;
+        byte milkMilliliters = 105;
+        byte milkWidget = 2;
+        byte iceCream = 100;
+        byte iceCreamBriquette = 2;
+        byte rawEggsWidget = 4;
+        byte rawEggsGrams = 70;
+        int resultBananas = bananasGrams * bananasWidget;
+        int resultMilk = milkMilliliters * milkWidget;
+        int resultIceCream = iceCream * iceCreamBriquette;
+        int resultRawEggs = rawEggsGrams * rawEggsWidget;
+        int resultBlender = resultBananas + resultMilk + resultIceCream + resultRawEggs;
+        double result = resultBlender * 0.001;
+        System.out.println("Результат: " + resultBlender + " грамм - " + result + " кг");
+
     }
 
 
