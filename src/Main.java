@@ -69,16 +69,20 @@ public class Main {
         int forTwentyMinutes = twentyMinutes * runningTimePerMinute;
 
         byte minHour = 60;
+        byte hour = 24;
         byte day = 1;
-        int oneDay = 24 * minHour;
+        int oneDay = hour * minHour;
         int forDay = oneDay * runningTimePerMinute;
 
         byte dayThree = 3;
-        int threeDays = 72 * minHour;
+        int hoursThree = hour * dayThree;
+        int threeDays = hoursThree * minHour;
         int forThreeDays = threeDays * runningTimePerMinute;
 
         byte month = 1;
-        int oneMonth = 720 * minHour;
+        byte thirtyDays = 30;
+        int thirtyPerDays = thirtyDays * hour;
+        int oneMonth = thirtyPerDays * minHour;
         int forOneMonth = oneMonth * runningTimePerMinute;
 
         System.out.println("За " + twentyMinutes + " минут машина произвела " + forTwentyMinutes + " штук бутылок");
