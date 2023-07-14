@@ -50,9 +50,9 @@ public class Main {
 
     public static void task3(){
         System.out.println("Задача 3");
-        int teacherLP = 23;
-        int teacherAS = 27;
-        int teacherEA = 30;
+        byte teacherLP = 23;
+        byte teacherAS = 27;
+        byte teacherEA = 30;
         int allPaper = 480;
         int pupils = teacherLP + teacherAS + teacherEA;
         int sheetsForEachPupils = allPaper / pupils;
@@ -129,7 +129,7 @@ public class Main {
 
     public static void task7(){
         System.out.println("Задача 7");
-        int overWeightKilo = 7;
+        byte overWeightKilo = 7;
         int overWeightGram = overWeightKilo * 1000;
         int loseWeightMinimumGram = 250;
         int loseWeightMaximumGram = 500;
