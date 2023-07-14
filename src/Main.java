@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1(){
@@ -140,11 +141,30 @@ public class Main {
         System.out.println("На похудение уйдет " + mediumDays + " дней , если спортсмен будет терять каждый день по " + loseWeightMediumGram + " грамм." );
         System.out.println("На похудение уйдет " + maximumDays + " дней , если спортсмен будет терять каждый день по " + loseWeightMaximumGram + " грамм." );
 
-
-
     }
+    public static void task8(){
+        System.out.println("Задача 8");
+        int employeeMashaRublesMonth = 67760;
+        int employeeDenisRublesMonth = 83690;
+        int employeeChristinaRublesMonth = 76230;
+        byte year = 12;
 
+        int beforeIncreaseMashaRublesYear = employeeMashaRublesMonth * year;
+        int afterIncreaseMashaRublesYear = ((employeeMashaRublesMonth * 110 /100) * year);
+        int differenceMashaRublesYear = afterIncreaseMashaRublesYear - beforeIncreaseMashaRublesYear;
 
+        int beforeIncreaseDenisRublesYear = employeeDenisRublesMonth * year;
+        int afterIncreaseDenisRublesYear = ((employeeDenisRublesMonth * 110 /100) * year);
+        int differenceDenisRublesYear = afterIncreaseDenisRublesYear - beforeIncreaseDenisRublesYear;
+
+        int beforeIncreaseChristinaRublesYear = employeeChristinaRublesMonth * year;
+        int afterIncreaseChristinaRublesYear = ((employeeChristinaRublesMonth * 110 /100) * year);
+        int differenceChristinaRublesYear = afterIncreaseChristinaRublesYear - beforeIncreaseChristinaRublesYear;
+
+        System.out.println("Маша теперь получает " + afterIncreaseMashaRublesYear + " рублей. Годовой доход вырос на " + differenceMashaRublesYear + " рублей.");
+        System.out.println("Денис теперь получает " + afterIncreaseDenisRublesYear + " рублей. Годовой доход вырос на " + differenceDenisRublesYear + " рублей.");
+        System.out.println("Кристина теперь получает " + afterIncreaseChristinaRublesYear + " рублей. Годовой доход вырос на " + differenceChristinaRublesYear + " рублей.");
+    }
 
 
 
