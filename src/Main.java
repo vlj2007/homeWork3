@@ -53,7 +53,7 @@ public class Main {
         byte teacherLP = 23;
         byte teacherAS = 27;
         byte teacherEA = 30;
-        int allPaper = 480;
+        short allPaper = 480;
         int pupils = teacherLP + teacherAS + teacherEA;
         int sheetsForEachPupils = allPaper / pupils;
         System.out.println("У Людмилы Павловны — " + teacherLP + " ученика ");
@@ -69,7 +69,7 @@ public class Main {
         byte timeWork = 2;
         int runningTimePerMinute = machinePerformance / timeWork;
 
-        int twentyMinutes = 20;
+        byte twentyMinutes = 20;
         int forTwentyMinutes = twentyMinutes * runningTimePerMinute;
 
         byte minHour = 60;
